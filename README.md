@@ -1,4 +1,4 @@
-# stylelint-config-cloudfour
+# stylelint-config-cloudfour-suit
 
 [![NPM version](http://img.shields.io/npm/v/stylelint-config-cloudfour-suit.svg)](https://www.npmjs.org/package/stylelint-config-cloudfour-suit) [![Build Status](https://travis-ci.org/cloudfour/stylelint-config-cloudfour-suit.svg?branch=master)](https://travis-ci.org/cloudfour/stylelint-config-cloudfour-suit) [![Renovate Status](https://badges.renovateapi.com/github/cloudfour/stylelint-config-cloudfour-suit)](https://renovatebot.com/)
 
@@ -55,9 +55,9 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 
 -   [stylelint-selector-bem-pattern](https://github.com/simonsmith/stylelint-selector-bem-pattern): Stylelint plugin that enforces SUIT naming convention (despite the name).
 
-### What's the difference between this config and [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour)?
+### What's the difference between [stylelint-config-cloudfour-suit](https://github.com/cloudfour/stylelint-config-cloudfour-suit) and [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour)?
 
-[stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour) only contains the CSS formatting rules. This config extends that one, and additionally enforces the [SUIT naming convention](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md). In most cases, you should use this one, but if your project doesn't follow the SUIT naming scheme, then you can use [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour) directly.
+[stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour) only contains the CSS formatting rules. [stylelint-config-cloudfour-suit](https://github.com/cloudfour/stylelint-config-cloudfour-suit) extends it, and additionally enforces the [SUIT naming convention](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md). In most cases, you should use [stylelint-config-cloudfour-suit](https://github.com/cloudfour/stylelint-config-cloudfour-suit), but if your project doesn't follow the SUIT naming scheme, then you can use [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour) directly.
 
 ## [Changelog](CHANGELOG.md)
 
