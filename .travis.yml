@@ -1,0 +1,25 @@
+sudo: false
+
+git:
+  depth: 1
+
+branches:
+  only:
+    - master
+    - /^renovate.*$/
+
+language: node_js
+
+# cache node modules
+cache:
+  directories:
+    - $HOME/.npm
+    - node_modules
+
+node_js:
+  - "8"
+  - "6"
+  - "10"
+
+before_install:
+  - npm install -g npm@latest
