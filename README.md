@@ -14,7 +14,7 @@ npm install stylelint stylelint-config-cloudfour-suit --save-dev
 
 ## Usage
 
-If you've installed `stylelint-config-cloudfour` locally within your project, just set your `stylelint` config to:
+If you've installed `stylelint-config-cloudfour-suit` locally within your project, just set your `stylelint` config to:
 
 ```js
 {
