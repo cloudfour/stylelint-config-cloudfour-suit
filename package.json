@@ -21,7 +21,7 @@
     "url": "https://github.com/cloudfour/stylelint-config-cloudfour-suit/issues"
   },
   "dependencies": {
-    "stylelint-config-cloudfour": "^1.0.5",
+    "stylelint-config-cloudfour": "^2.0.0",
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "devDependencies": {
