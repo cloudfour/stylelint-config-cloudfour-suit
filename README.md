@@ -22,6 +22,38 @@ If you've installed `stylelint-config-cloudfour-suit` locally within your projec
 }
 ```
 
+You'll probably also want to add a script to your `package.json` file to make it easier to run Stylelint with this config:
+
+```json
+"scripts": {
+  "lint:css": "stylelint '**/*.css'"
+}
+```
+
+### Using with Prettier
+
+It's common to [pair Stylelint with Prettier](https://prettier.io/docs/en/integrating-with-linters.html#stylelint). If you're going to use both, you'll want to add [`stylelint-config-prettier`](https://github.com/prettier/stylelint-config-prettier), which is a config that disables any Stylelint rules that conflict with Prettier.
+
+```
+npm install stylelint-config-prettier --save-dev
+```
+
+Then add it to your Stylelint config. It'll need to be the last item in the `extends` array so it can override other configs.
+
+```js
+{
+  extends: ["stylelint-config-cloudfour-suit", "stylelint-prettier/recommended"],
+}
+```
+
+Then you can update your `package.json` script to run Prettier as well as Stylelint:
+
+```json
+"scripts": {
+  "lint:css": "prettier --list-different '**/*.css' && stylelint '**/*.css'"
+}
+```
+
 ### Extending the config
 
 Simply add a `"rules"` key to your config, then add your overrides and additions there.
