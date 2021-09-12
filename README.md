@@ -1,6 +1,6 @@
 # stylelint-config-cloudfour-suit
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-cloudfour-suit.svg)](https://www.npmjs.org/package/stylelint-config-cloudfour-suit) [![Build Status](https://travis-ci.org/cloudfour/stylelint-config-cloudfour-suit.svg?branch=main)](https://travis-ci.org/cloudfour/stylelint-config-cloudfour-suit) [![Renovate status](https://badges.renovateapi.com/github/cloudfour/stylelint-config-cloudfour-suit)](https://renovatebot.com/)
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-cloudfour-suit.svg)](https://www.npmjs.org/package/stylelint-config-cloudfour-suit) [![Build Status](https://github.com/cloudfour/stylelint-config-cloudfour-suit/workflows/CI/badge.svg)](https://github.com/cloudfour/stylelint-config-cloudfour-suit/actions?query=workflow%3ACI) [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 
 > A sharable stylelint config object that enforces [Cloud Four's CSS Standards](https://github.com/cloudfour/guides/tree/main/css) & [SUIT naming convention](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 
