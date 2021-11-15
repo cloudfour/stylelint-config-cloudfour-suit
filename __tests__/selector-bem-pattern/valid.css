@@ -1,0 +1,39 @@
+/**
+ * Testing SUIT Selectors
+ */
+
+/** @define utilities */
+
+.u-utilityName {
+  color: red;
+}
+
+.u-sm-responsiveUtilityName {
+  color: red;
+}
+
+/** @define ComponentName */
+
+:root {
+  --ComponentName-backgroundColor: red;
+  --ComponentName-descendant-backgroundColor: red;
+  --ComponentName--modifier-backgroundColor: red;
+  --ComponentName-onHover-backgroundColor: red;
+  --ComponentName-descendant-onHover-backgroundColor: red;
+}
+
+.ComponentName {
+  color: red;
+}
+
+.ComponentName--modifierName {
+  color: red;
+}
+
+.ComponentName-descendentName {
+  color: red;
+}
+
+.ComponentName.is-stateOfComponent {
+  color: red;
+}
