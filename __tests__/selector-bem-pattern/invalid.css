@@ -1,0 +1,31 @@
+/**
+ * Testing non-SUIT Selectors
+ */
+
+/** @define utilities */
+
+.utilityName {
+  color: red;
+}
+
+/** @define ComponentName */
+
+:root {
+  --whatever: red;
+}
+
+.component-name {
+  color: red;
+}
+
+.component-name--modifier-name {
+  color: red;
+}
+
+.component-name__descendent-name {
+  color: red;
+}
+
+.component-name.is-state-of-component {
+  color: red;
+}

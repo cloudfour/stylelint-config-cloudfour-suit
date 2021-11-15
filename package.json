@@ -2,73 +2,61 @@
   "name": "stylelint-config-cloudfour-suit",
   "version": "4.0.0",
   "description": "Cloud Four's stylelint config + SUIT naming",
-  "author": "Cloud Four",
   "keywords": [
     "stylelint",
     "stylelint-config",
-    "config",
-    "cloudfour",
-    "css"
+    "cloudfour"
   ],
+  "repository": "cloudfour/stylelint-config-cloudfour-suit",
   "license": "MIT",
+  "author": "Cloud Four",
   "main": "index.js",
-  "homepage": "https://github.com/cloudfour/stylelint-config-cloudfour-suit#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cloudfour/stylelint-config-cloudfour-suit.git"
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "run-s lint:js lint:md:check lint:prettier",
+    "lint:check": "run-s lint:*:check",
+    "lint:js": "eslint --fix .",
+    "lint:js:check": "eslint .",
+    "lint:md:check": "remark . --quiet --frail",
+    "lint:prettier": "prettier --write .",
+    "lint:prettier:check": "prettier --list-different .",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
-  "bugs": {
-    "url": "https://github.com/cloudfour/stylelint-config-cloudfour-suit/issues"
+  "prettier": "@stylelint/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "stylelint"
+    ],
+    "globals": {
+      "module": true,
+      "require": true
+    }
+  },
+  "remarkConfig": {
+    "plugins": [
+      "@stylelint/remark-preset"
+    ]
   },
   "dependencies": {
     "stylelint-config-cloudfour": "^4.0.0",
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "devDependencies": {
+    "@stylelint/prettier-config": "2.0.0",
+    "@stylelint/remark-preset": "3.0.0",
     "eslint": "7.32.0",
-    "eslint-config-stylelint": "13.1.1",
+    "eslint-config-stylelint": "15.0.0",
     "jest": "27.3.1",
-    "jest-preset-stylelint": "4.2.0",
     "npm-run-all": "4.1.5",
-    "npmpub": "5.0.0",
+    "postcss": "8.3.11",
+    "prettier": "2.4.1",
     "remark-cli": "10.0.0",
-    "remark-preset-lint-consistent": "5.1.0",
-    "remark-preset-lint-recommended": "6.1.1",
-    "stylelint": "13.13.1"
+    "stylelint": "14.1.0"
   },
   "peerDependencies": {
-    "stylelint": "^9.10.1 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0"
-  },
-  "scripts": {
-    "dry-release": "npmpub --dry --verbose",
-    "lint:js": "eslint . --ignore-path .gitignore",
-    "lint:md": "remark . --quiet --frail",
-    "lint": "npm-run-all --parallel lint:*",
-    "release": "npmpub",
-    "test": "jest",
-    "watch": "jest --watch"
-  },
-  "eslintConfig": {
-    "extends": [
-      "stylelint"
-    ]
-  },
-  "eslintIgnore": [
-    "*.md"
-  ],
-  "jest": {
-    "preset": "jest-preset-stylelint"
-  },
-  "remarkConfig": {
-    "plugins": [
-      "preset-lint-recommended",
-      "preset-lint-consistent"
-    ]
-  },
-  "renovate": {
-    "extends": [
-      "config:base",
-      ":automergeMinor"
-    ]
+    "stylelint": "^14.0.0"
   }
 }

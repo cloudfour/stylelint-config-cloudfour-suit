@@ -1,2 +1,2 @@
-**/*.css
-**/*.md
+__tests__/**/*.css
+__tests__/**/*.scss

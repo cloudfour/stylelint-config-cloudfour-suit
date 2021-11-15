@@ -81,11 +81,11 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 
 ### Extends
 
--   [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour): A sharable stylelint config object that enforces [Cloud Four's CSS Standards](https://github.com/cloudfour/guides/tree/master/css)
+- [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour): A sharable stylelint config object that enforces [Cloud Four's CSS Standards](https://github.com/cloudfour/guides/tree/master/css)
 
 ### Plugins
 
--   [stylelint-selector-bem-pattern](https://github.com/simonsmith/stylelint-selector-bem-pattern): Stylelint plugin that enforces SUIT naming convention (despite the name).
+- [stylelint-selector-bem-pattern](https://github.com/simonsmith/stylelint-selector-bem-pattern): Stylelint plugin that enforces SUIT naming convention (despite the name).
 
 ### What's the difference between [stylelint-config-cloudfour-suit](https://github.com/cloudfour/stylelint-config-cloudfour-suit) and [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour)?
 
