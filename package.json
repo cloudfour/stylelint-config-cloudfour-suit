@@ -41,7 +41,7 @@
     ]
   },
   "dependencies": {
-    "stylelint-config-cloudfour": "^4.0.0",
+    "stylelint-config-cloudfour": "^5.0.1",
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "devDependencies": {

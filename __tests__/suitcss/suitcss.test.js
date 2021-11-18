@@ -1,6 +1,6 @@
 'use strict';
 
-const config = require('../../');
+const config = require('../..');
 const fs = require('fs');
 const stylelint = require('stylelint');
 

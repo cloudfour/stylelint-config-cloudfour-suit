@@ -4,7 +4,7 @@
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
-  background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(#fff, rgba(0 0 0 / 80%));
   box-sizing: border-box;
   color: #333;
   display: block;
@@ -26,9 +26,9 @@
   }
 }
 
-@media (min-orientation: portrait), projection and (color) {
+@media (orientation: portrait), projection and (color) {
   .selector-i + .selector-ii {
-    background: color(rgb(0, 0, 0) lightness(50%));
+    background: hsl(20deg 25% 33%);
     font-family: helvetica, arial, sans-serif;
   }
 }
@@ -41,7 +41,7 @@
         -45deg,
         transparent,
         #fff 25px,
-        rgba(255, 255, 255, 1) 50px
+        rgb(255 255 255 / 1) 50px
       );
     box-shadow:
       0 1px 1px #000,
