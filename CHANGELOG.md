@@ -1,3 +1,7 @@
+# 5.0.2 - 2021-11-18
+
+- Updated `stylelint-config-cloudfour` to v5.0.2
+
 # 5.0.1 - 2021-11-17
 
 - Major version bump due to dependencies
