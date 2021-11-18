@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-cloudfour-suit",
-  "version": "4.0.0",
+  "version": "5.0.1",
   "description": "Cloud Four's stylelint config + SUIT naming",
   "keywords": [
     "stylelint",
