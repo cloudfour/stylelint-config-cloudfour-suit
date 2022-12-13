@@ -1,3 +1,7 @@
+# 7.0.0 - 2022-12-13
+
+- Updated `stylelint-config-cloudfour` to v7.0.0
+
 # 6.1.0 - 2022-08-28
 
 - Updated `stylelint-config-cloudfour` to v6.1.0
