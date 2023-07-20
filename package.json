@@ -45,7 +45,7 @@
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "devDependencies": {
-    "@stylelint/prettier-config": "2.0.0",
+    "@stylelint/prettier-config": "3.0.0",
     "@stylelint/remark-preset": "4.0.0",
     "eslint": "8.45.0",
     "eslint-config-stylelint": "17.1.0",
