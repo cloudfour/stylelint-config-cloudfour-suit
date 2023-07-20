@@ -30,6 +30,16 @@
     "extends": [
       "stylelint"
     ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.test.js"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ],
     "globals": {
       "module": true,
       "require": true
