@@ -1,3 +1,7 @@
+# Unreleased
+
+- Updated `stylelint-selector-bem-pattern` to v3
+
 # 7.0.0 - 2022-12-13
 
 - Updated `stylelint-config-cloudfour` to v7.0.0

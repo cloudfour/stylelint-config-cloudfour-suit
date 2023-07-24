@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "stylelint-config-cloudfour": "^7.0.0",
-    "stylelint-selector-bem-pattern": "^2.0.0"
+    "stylelint-selector-bem-pattern": "^3.0.0"
   },
   "devDependencies": {
     "@stylelint/prettier-config": "3.0.0",
