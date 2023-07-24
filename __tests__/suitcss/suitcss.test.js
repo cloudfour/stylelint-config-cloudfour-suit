@@ -47,15 +47,13 @@ describe('flags warnings with invalid css', () => {
 	it('correct warning text', () => {
 		return result.then((data) =>
 			expect(data.results[0].warnings[0].text).toBe(
-				'Expected a leading zero (number-leading-zero)',
+				'Expected "#ff0000" to be "#f00" (color-hex-length)',
 			),
 		);
 	});
 
 	it('correct rule flagged', () => {
-		return result.then((data) =>
-			expect(data.results[0].warnings[0].rule).toBe('number-leading-zero'),
-		);
+		return result.then((data) => expect(data.results[0].warnings[0].rule).toBe('color-hex-length'));
 	});
 
 	it('correct severity flagged', () => {
@@ -67,6 +65,6 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('correct column number', () => {
-		return result.then((data) => expect(data.results[0].warnings[0].column).toBe(8));
+		return result.then((data) => expect(data.results[0].warnings[0].column).toBe(10));
 	});
 });
