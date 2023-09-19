@@ -1,3 +1,7 @@
+# 9.0.0 - 2023-09-19
+
+- Updated `stylelint-config-cloudfour` to v9
+
 # 8.0.0 - 2023-07-24
 
 - Updated `stylelint` peer dependency to v15
