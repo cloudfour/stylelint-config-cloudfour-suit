@@ -26,25 +26,6 @@
     "test:watch": "npm test --ignore-scripts -- --watch"
   },
   "prettier": "@stylelint/prettier-config",
-  "eslintConfig": {
-    "extends": [
-      "stylelint"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.test.js"
-        ],
-        "env": {
-          "jest": true
-        }
-      }
-    ],
-    "globals": {
-      "module": true,
-      "require": true
-    }
-  },
   "remarkConfig": {
     "plugins": [
       "@stylelint/remark-preset"
@@ -57,8 +38,8 @@
   "devDependencies": {
     "@stylelint/prettier-config": "3.0.0",
     "@stylelint/remark-preset": "5.1.1",
-    "eslint": "8.57.1",
-    "eslint-config-stylelint": "21.0.0",
+    "eslint": "9.20.1",
+    "eslint-config-stylelint": "23.0.0",
     "npm-run-all2": "7.0.2",
     "postcss": "8.5.3",
     "prettier": "3.5.1",
