@@ -39,7 +39,7 @@
     "@stylelint/prettier-config": "3.0.0",
     "@stylelint/remark-preset": "5.1.1",
     "eslint": "9.39.2",
-    "eslint-config-stylelint": "23.0.0",
+    "eslint-config-stylelint": "26.1.0",
     "npm-run-all2": "8.0.4",
     "postcss": "8.5.6",
     "prettier": "3.8.1",
