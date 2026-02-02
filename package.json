@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "stylelint-config-cloudfour": "10.0.0",
-    "stylelint-selector-bem-pattern": "3.0.1"
+    "stylelint-selector-bem-pattern": "4.0.1"
   },
   "devDependencies": {
     "@stylelint/prettier-config": "3.0.0",
