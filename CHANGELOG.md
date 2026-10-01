@@ -1,3 +1,7 @@
+# 10.0.1 - 2026-10-01
+
+- Deprecated this package. See the README for migration instructions (#597)
+
 # 10.0.0 - 2024-02-08
 
 - Updated `stylelint-config-cloudfour` to v10
