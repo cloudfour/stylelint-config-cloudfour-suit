@@ -1,6 +1,39 @@
 # stylelint-config-cloudfour-suit
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-cloudfour-suit.svg)](https://www.npmjs.org/package/stylelint-config-cloudfour-suit) [![Build Status](https://github.com/cloudfour/stylelint-config-cloudfour-suit/workflows/CI/badge.svg)](https://github.com/cloudfour/stylelint-config-cloudfour-suit/actions?query=workflow%3ACI) [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-cloudfour-suit.svg)](https://www.npmjs.org/package/stylelint-config-cloudfour-suit) [![Build Status](https://github.com/cloudfour/stylelint-config-cloudfour-suit/workflows/CI/badge.svg)](https://github.com/cloudfour/stylelint-config-cloudfour-suit/actions?query=workflow%3ACI)
+
+## ⚠️ Deprecated
+
+This package is no longer maintained and will not be updated for future versions of stylelint. It only added one rule on top of [`stylelint-config-cloudfour`](https://github.com/cloudfour/stylelint-config-cloudfour), so you can replace it with that config and the same rule in your own project.
+
+To migrate, swap the dependencies:
+
+```
+npm uninstall stylelint-config-cloudfour-suit
+npm install stylelint-config-cloudfour@10 stylelint-selector-bem-pattern@4 --save-dev
+```
+
+Then update your stylelint config to extend `stylelint-config-cloudfour` and add the SUIT naming rule:
+
+```js
+export default {
+  extends: "stylelint-config-cloudfour",
+  plugins: ["stylelint-selector-bem-pattern"],
+  rules: {
+    // Enforce SUIT CSS naming conventions
+    "plugin/selector-bem-pattern": {
+      preset: "suit",
+      utilitySelectors: "^.u-(sm-|md-|lg-|xl-)?([a-z0-9]*[a-zA-Z0-9]*)"
+    }
+  }
+};
+```
+
+Your lint results will be the same as before. If your project no longer follows SUIT naming, you can leave out the `plugins` and `plugin/selector-bem-pattern` lines entirely.
+
+See [#597](https://github.com/cloudfour/stylelint-config-cloudfour-suit/issues/597) for background.
+
+---
 
 > A sharable stylelint config object that enforces [Cloud Four's CSS Standards](https://github.com/cloudfour/guides/tree/main/css) & [SUIT naming convention](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 
@@ -89,7 +122,7 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 
 ### What's the difference between [stylelint-config-cloudfour-suit](https://github.com/cloudfour/stylelint-config-cloudfour-suit) and [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour)?
 
-[stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour) only contains the CSS formatting rules. [stylelint-config-cloudfour-suit](https://github.com/cloudfour/stylelint-config-cloudfour-suit) extends it, and additionally enforces the [SUIT naming convention](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md). In most cases, you should use [stylelint-config-cloudfour-suit](https://github.com/cloudfour/stylelint-config-cloudfour-suit), but if your project doesn't follow the SUIT naming scheme, then you can use [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour) directly.
+[stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour) only contains the CSS formatting rules. [stylelint-config-cloudfour-suit](https://github.com/cloudfour/stylelint-config-cloudfour-suit) extends it, and additionally enforces the [SUIT naming convention](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md). Since this package is deprecated, new projects should use [stylelint-config-cloudfour](https://github.com/cloudfour/stylelint-config-cloudfour) directly, adding the SUIT naming rule shown above if they need it.
 
 ## [Changelog](CHANGELOG.md)
 
